@@ -27,7 +27,8 @@ h4 {
 }
 
 .count-container,
-.truckcounter-container {
+.truckcounter-container,
+.luxurycounter-container {
   background-color: blue;
   width: 28px;
   height: 28px;
@@ -39,13 +40,15 @@ h4 {
 }
 
 .btn-container,
-.truckbtn-container {
+.truckbtn-container,
+.luxurybtn-container {
   position: relative;
   margin-top: 150px;
 }
 
 .add-carbtn,
-.addtruck-btn {
+.addtruck-btn,
+.addluxury-btn {
   padding: 10px 10px;
   font-size: 16px;
   color: white;
@@ -55,7 +58,8 @@ h4 {
 }
 
 .remove-carbtn,
-.removetruck-btn {
+.removetruck-btn,
+.removeluxury-btn {
   padding: 10px 10px;
   font-size: 16px;
   color: white;

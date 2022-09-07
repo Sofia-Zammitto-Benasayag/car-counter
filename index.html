@@ -78,26 +78,33 @@
 
         <div class="luxury">
           <h3>Luxury</h3>
-          <i class="fa-solid fa-car fa-3x"></i>
 
-          <h4 id="count-luxury">0</h4>
-          <img src="/luxurycar.jpg" alt="" class="luxury-car" />
-          <button
-            type="button"
-            class="btn btn-success"
-            id="increment-btn"
-            onclick="addLuxury()"
-          >
-            Add car
-          </button>
-          <button
-            type="button"
-            class="btn btn-danger"
-            id="increment-btn"
-            onclick="removeLuxury()"
-          >
-            Remove car
-          </button>
+          <div class="luxuryicon-container">
+            <i class="fa-solid fa-car fa-10x"></i>
+          </div>
+
+          <div class="luxurycounter-container">
+            <h4 id="count-luxury">0</h4>
+          </div>
+
+          <div class="luxurybtn-container">
+            <button
+              type="button"
+              class="addluxury-btn"
+              id="increment-btn"
+              onclick="addLuxury()"
+            >
+              Add car
+            </button>
+            <button
+              type="button"
+              class="removeluxury-btn"
+              id="increment-btn"
+              onclick="removeLuxury()"
+            >
+              Remove car
+            </button>
+          </div>
         </div>
       </div>
 
