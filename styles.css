@@ -68,6 +68,15 @@ h4 {
   border-radius: 5px;
 }
 
+.save-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
 .car-counter {
   margin-top: 50px;
   background-color: rgb(220, 220, 220, 0.9);
@@ -90,15 +99,15 @@ button {
 }
 
 .four-door {
-  background-color: gray;
+  /* background-color: gray; */
 }
 
 .trucks {
-  background-color: lightblue;
+  /* background-color: lightblue; */
 }
 
 .luxury {
-  background-color: lightpink;
+  /* background-color: lightpink; */
 }
 
 .blue-car {
@@ -111,4 +120,11 @@ button {
 
 .luxury-car {
   width: 200px;
+}
+
+.icon-container,
+.truckicon-container,
+.luxuryicon-container {
+  display: flex;
+  justify-content: center;
 }

@@ -24,7 +24,9 @@
           <h3>4-door</h3>
 
           <div class="icon-container">
-            <i class="fa-solid fa-car-side fa-10x"></i>
+            <div>
+              <i class="fa-solid fa-car-side fa-10x"></i>
+            </div>
           </div>
 
           <div class="count-container">
@@ -50,7 +52,9 @@
           <h3>Trucks</h3>
 
           <div class="truckicon-container">
-            <i class="fa-solid fa-truck fa-10x"></i>
+            <div>
+              <i class="fa-solid fa-truck fa-10x"></i>
+            </div>
           </div>
 
           <div class="truckcounter-container">
@@ -80,7 +84,9 @@
           <h3>Luxury</h3>
 
           <div class="luxuryicon-container">
-            <i class="fa-solid fa-car fa-10x"></i>
+            <div>
+              <i class="fa-solid fa-car fa-10x"></i>
+            </div>
           </div>
 
           <div class="luxurycounter-container">
@@ -111,7 +117,7 @@
       <div class="savebtn-container">
         <button
           type="button"
-          class="btn btn-primary btn-lg"
+          class="save-btn"
           id="increment-btn"
           onclick="save()"
         >
@@ -127,37 +133,38 @@
     let countTrucks = document.getElementById("count-trucks");
     let countLuxury = document.getElementById("count-luxury");
 
-    let count = 0;
+    let cars = 0;
+    let trucks = 0;
+    let luxury = 0;
 
     function addCar() {
-      count += 1;
-      countFourDoor.textContent = count;
+      cars += 1;
+      countFourDoor.textContent = cars;
     }
 
     function removeCar() {
-      count -= 1;
-      countFourDoor.textContent = count;
+      cars -= 1;
+      countFourDoor.textContent = cars;
     }
 
     function addTrucks() {
-      count = 0;
-      count += 1;
-      countTrucks.textContent = count;
+      trucks += 1;
+      countTrucks.textContent = trucks;
     }
 
     function removeTrucks() {
-      count -= 1;
-      countTrucks.textContent = count;
+      trucks -= 1;
+      countTrucks.textContent = trucks;
     }
 
     function addLuxury() {
-      count += 1;
-      countLuxury.textContent = count;
+      luxury += 1;
+      countLuxury.textContent = luxury;
     }
 
     function removeLuxury() {
-      count -= 1;
-      countLuxury.textContent = count;
+      luxury -= 1;
+      countLuxury.textContent = luxury;
     }
   </script>
 </html>
