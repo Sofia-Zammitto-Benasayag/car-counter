@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://kit.fontawesome.com/b438c4e3fd.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Car Counter</title>
+  </head>
+  <body>
+    <div class="car-counter">
+      <h1>
+        Car Counter
+      </h1>
+      <h2 id="date"></h2>
+
+      <div class="car-counters">
+        <div class="four-door">
+          <h3>4-door</h3>
+
+          <div class="icon-container">
+            <i class="fa-solid fa-car-side fa-10x"></i>
+          </div>
+
+          <div class="count-container">
+            <h4 id="count-fourdoor">0</h4>
+          </div>
+
+          <div class="btn-container">
+            <button class="add-carbtn" id="increment-btn" onclick="addCar()">
+              Add car
+            </button>
+            <button
+              type="button"
+              class="remove-carbtn"
+              id="increment-btn"
+              onclick="removeCar()"
+            >
+              Remove car
+            </button>
+          </div>
+        </div>
+
+        <div class="trucks">
+          <h3>Trucks</h3>
+
+          <div class="truckicon-container">
+            <i class="fa-solid fa-truck fa-10x"></i>
+          </div>
+
+          <div class="truckcounter-container">
+            <h4 id="count-trucks">0</h4>
+          </div>
+
+          <div class="truckbtn-container">
+            <button
+              class="addtruck-btn"
+              id="increment-btn"
+              onclick="addTrucks()"
+            >
+              Add Truck
+            </button>
+            <button
+              type="button"
+              class="removetruck-btn"
+              id="increment-btn"
+              onclick="removeTrucks()"
+            >
+              Remove Truck
+            </button>
+          </div>
+        </div>
+
+        <div class="luxury">
+          <h3>Luxury</h3>
+          <i class="fa-solid fa-car fa-3x"></i>
+
+          <h4 id="count-luxury">0</h4>
+          <img src="/luxurycar.jpg" alt="" class="luxury-car" />
+          <button
+            type="button"
+            class="btn btn-success"
+            id="increment-btn"
+            onclick="addLuxury()"
+          >
+            Add car
+          </button>
+          <button
+            type="button"
+            class="btn btn-danger"
+            id="increment-btn"
+            onclick="removeLuxury()"
+          >
+            Remove car
+          </button>
+        </div>
+      </div>
+
+      <div class="savebtn-container">
+        <button
+          type="button"
+          class="btn btn-primary btn-lg"
+          id="increment-btn"
+          onclick="save()"
+        >
+          Save
+        </button>
+      </div>
+    </div>
+  </body>
+  <script>
+    document.getElementById("date").innerHTML = Date();
+
+    let countFourDoor = document.getElementById("count-fourdoor");
+    let countTrucks = document.getElementById("count-trucks");
+    let countLuxury = document.getElementById("count-luxury");
+
+    let count = 0;
+
+    function addCar() {
+      count += 1;
+      countFourDoor.textContent = count;
+    }
+
+    function removeCar() {
+      count -= 1;
+      countFourDoor.textContent = count;
+    }
+
+    function addTrucks() {
+      count = 0;
+      count += 1;
+      countTrucks.textContent = count;
+    }
+
+    function removeTrucks() {
+      count -= 1;
+      countTrucks.textContent = count;
+    }
+
+    function addLuxury() {
+      count += 1;
+      countLuxury.textContent = count;
+    }
+
+    function removeLuxury() {
+      count -= 1;
+      countLuxury.textContent = count;
+    }
+  </script>
+</html>

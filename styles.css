@@ -1,0 +1,110 @@
+body {
+  font-family: sans-serif;
+  background-image: url("parkinglot1.jpg");
+}
+
+.savebtn-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h4 {
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+
+.count-container,
+.truckcounter-container {
+  background-color: blue;
+  width: 28px;
+  height: 28px;
+  margin-top: -190px;
+  margin-left: 110px;
+  border-radius: 50px;
+  position: relative;
+  /* ^this brought it to the front*/
+}
+
+.btn-container,
+.truckbtn-container {
+  position: relative;
+  margin-top: 150px;
+}
+
+.add-carbtn,
+.addtruck-btn {
+  padding: 10px 10px;
+  font-size: 16px;
+  color: white;
+  background-color: green;
+  border: none;
+  border-radius: 5px;
+}
+
+.remove-carbtn,
+.removetruck-btn {
+  padding: 10px 10px;
+  font-size: 16px;
+  color: white;
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+}
+
+.car-counter {
+  margin-top: 50px;
+  background-color: rgb(220, 220, 220, 0.9);
+  border-radius: 50px;
+}
+
+.car-counters {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  margin: 10px 10px;
+}
+
+.four-door {
+  background-color: gray;
+}
+
+.trucks {
+  background-color: lightblue;
+}
+
+.luxury {
+  background-color: lightpink;
+}
+
+.blue-car {
+  width: 200px;
+}
+
+.white-truck {
+  width: 200px;
+}
+
+.luxury-car {
+  width: 200px;
+}
