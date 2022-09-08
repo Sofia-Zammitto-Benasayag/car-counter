@@ -115,14 +115,15 @@
       </div>
 
       <div class="savebtn-container">
-        <button
-          type="button"
-          class="save-btn"
-          id="increment-btn"
-          onclick="save()"
-        >
-          Save
+        <button class="save-btn" id="save-btn" onclick="save()">
+          SAVE
         </button>
+      </div>
+
+      <div class="msg-container">
+        <div class="msg" id="total-msg">
+          <p id="save-el"></p>
+        </div>
       </div>
     </div>
   </body>
@@ -132,6 +133,7 @@
     let countFourDoor = document.getElementById("count-fourdoor");
     let countTrucks = document.getElementById("count-trucks");
     let countLuxury = document.getElementById("count-luxury");
+    let saveEl = document.getElementById("save-el");
 
     let cars = 0;
     let trucks = 0;
@@ -165,6 +167,19 @@
     function removeLuxury() {
       luxury -= 1;
       countLuxury.textContent = luxury;
+    }
+
+    function save() {
+      document.getElementById("total-msg").style.backgroundColor = "white";
+      document.getElementById("total-msg").style.border = "thin dotted black";
+      let countTotal = cars + trucks + luxury;
+      let countStr = "You have counted a total of" + " ";
+      let countMsg = countStr + countTotal + " " + "vehicles";
+      saveEl.textContent += countMsg;
+      countFourDoor.textContent = 0;
+      countTrucks.textContent = 0;
+      countLuxury.textContent = 0;
+      count = 0;
     }
   </script>
 </html>
